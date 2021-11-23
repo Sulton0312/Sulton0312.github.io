@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+    p, h1, h2 { padding: 0 !important; text-align: center !important;}}
+
+#hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    color: #0984e3;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0984e3;
+    transition: 1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:#eb579e;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #0984E3;
+    color: white;
+    transition: 1s;
+}
+
+.btn:hover {
+    border: 1px solid #0984E3 ;
+    background-color: white ;
+    color: #0984E3;
+}
+
+.skills .html{
+    color: #a0a0a0;
+    transition: 1s;
+}
+.skills .html:hover {
+    color: #E44D26;
+}
+
+.skills .css{
+    color: #a0a0a0;
+    transition: 1s;
+}
+.skills .css:hover {
+    color: #007DB7;
+}
+
+.skills .js{
+    color: #a0a0a0;
+    transition: 1s;
+}
+.skills .js:hover {
+    color: #FA9C2A;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  #btn-back-to-top {
+    border: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
