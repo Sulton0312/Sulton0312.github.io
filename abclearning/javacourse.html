@@ -1,0 +1,222 @@
+<html>
+
+<head>
+
+    <!-- file css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/tablecontact.css">
+    <link rel="stylesheet" type="text/css" href="css/size_image.css">
+    <link rel="stylesheet" type="text/css" href="css/skill_bar.css">
+    <link rel="stylesheet" type="text/css" href="css/border_course.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <title>ABC Learning Center- Detail Java Course</title>
+
+</head>
+
+<body class="body">
+    <header class="toper header">
+
+        <div class="menu-list">
+            <ul class="ul">
+
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="dropdown"><a href="index.html#profile">Profile</a>
+                    <ul class="ul isi-dropdown">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#skills">Our Skills</a></li>
+                        <li><a href="index.html#program">Our Programs</a></li>
+                        <li><a href="index.html#client">Our Client</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <div class="titlemenu">
+                    <li>
+                        <b>
+                            <em>
+                                <a style="font-size:18px;" href="../index.html">Back</a>
+                                <a style="font-size:18px;" href="index.html">ABC Learning</a>
+                            </em>
+                        </b>
+                    </li>
+                </div>
+            </ul>
+
+        </div>
+
+
+    </header>
+
+    <center>
+
+        <br><br>
+        <br><br>
+
+
+        <div style="margin-left: 100px; margin-right: 100px;" class="tab">
+            <button class="tablinks" id="detailcouse">Detail Course</button>
+            <button class="tablinks" id="detailschedule">Schedule</button>
+        </div>
+
+        <div id="java" class="tabcontent">
+            <br>
+            <div style="border-radius:10px ; color: white; margin-right: 100px; margin-left: 100px;">
+                <img src="images/java.jpg" style="margin-bottom: 10px;" alt=""><br>
+                <h2 style="color: black;">JAVA</h2>
+                <p class="hometext">Java is a programming language that produces
+                    software for multiple platforms. When a programmer writes a Java
+                    application, the compiled code (known as bytecode) runs on most
+                    operating systems (OS), including Windows, Linux and Mac OS. Java
+                    derives much of its syntax from the C and C++ programming languages.
+                    The basic steps to create the Hello World program are: write the program in Java, compile the
+                    source
+                    code,
+                    and
+                    run the program.
+
+                </p>
+
+                <ol style="padding: 50px;" class="hometext">
+                    <li>Write the Java Source Code</li>
+                    <li>Save the File</li>
+                    <li>Open a Terminal Window</li>
+                    <li>The Java Compiler</li>
+                    <li>Change the Directory</li>
+                    <li>Compile Your Program</li>
+                    <li>Run the Program</li>
+
+
+                </ol>
+            </div>
+        </div>
+
+        <div id="schedule" class="tabcontent">
+
+
+            <table border="1">
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>10:30-12:00 <br>
+                        12:00-15:00 <br>
+                        15:00-16:00 <br>
+                        16:00-18:00
+                    </td>
+                    <td>Mr. Pramod <br>
+                        Mrs.Jeyshree <br>
+                        Lunch/Break <br>
+                        Mr. Pramod
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:30-12:00 <br>
+                        12:00-15:00 <br>
+                        15:00-16:00 <br>
+                        16:00-18:00
+                    </td>
+                    <td>Mr. Pramod <br>
+                        Mrs. Neha <br>
+                        Lunch/Break <br>
+                        Mr. Pramod
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:30-12:00 <br>
+                        12:00-15:00 <br>
+                        15:00-16:00 <br>
+                        16:00-18:00
+                    </td>
+                    <td>Mr. Pramod <br>
+                        Mr. Pramod <br>
+                        Lunch/Break <br>
+                        Mr. Pramod
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:30-12:00 <br>
+                        12:00-15:00 <br>
+                        15:00-16:00 <br>
+                        16:00-18:00
+                    </td>
+                    <td>Mr. Pramod <br>
+                        Mrs. Neha <br>
+                        Lunch/Break <br>
+                        Mr. Pramod
+                    </td>
+                <tr>
+                    <td>Friday</td>
+                    <td>10:30-13:30 <br>
+                        13:30-14:30 <br>
+                        14:40-18:00
+                    </td>
+                    <td>Mr. Pramod <br>
+                        Lunch/Break <br>
+                        Mr. Pramod
+                    </td>
+                </tr>
+                </tr>
+            </table>
+
+            <br>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#schedule").hide();
+                $("#java").show();
+
+
+                $("#detailcouse").click(function () {
+                    $("#schedule").hide();
+                    $("#java").show();
+                });
+
+                $("#detailschedule").click(function () {
+                    $("#schedule").show();
+                    $("#java").hide();
+                });
+
+
+
+            });
+        </script>
+
+
+        <br><br>
+
+
+
+        <footer>
+            <div class="footer">
+                <p>
+                    <small>&copy; Copyright <span id="tahun">year now</span>, ABC Learning</small>
+
+
+
+                </p>
+            </div>
+        </footer>
+
+
+
+
+        <!-- file javascript -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/alert_input.js"></script>
+
+</body>
+
+</html>

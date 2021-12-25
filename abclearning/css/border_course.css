@@ -1,0 +1,75 @@
+.kotakputih {
+
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btndetail {
+    background-color: #1b1b1b;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    border-color: wheat;
+    border-style: solid;
+
+}
+
+.divutama {
+    display: inline-block;
+}
+
+body {
+    font-family: Arial;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+tr,
+td {
+    padding: 20px;
+}

@@ -1,0 +1,29 @@
+
+.contact {
+  padding: 20px;
+}
+
+tr td{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+
+font-size: 25px;
+border-radius: 5px;
+width: 100%;
+
+}
+textarea {
+  font-size: 25px;
+  border-radius: 5px;
+  width: 100%;
+
+}
+
+.btn {
+color: white;
+    background-color: #002147;
+padding: 10px;
+}
